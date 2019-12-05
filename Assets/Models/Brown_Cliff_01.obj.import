@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Brown_Cliff_01.obj-21dae62d0e47ca8a39ef29b0f5e8139c.mesh"
+
+[deps]
+
+files=[ "res://.import/Brown_Cliff_01.obj-21dae62d0e47ca8a39ef29b0f5e8139c.mesh" ]
+
+source_file="res://Assets/Models/Brown_Cliff_01.obj"
+dest_files=[ "res://.import/Brown_Cliff_01.obj-21dae62d0e47ca8a39ef29b0f5e8139c.mesh", "res://.import/Brown_Cliff_01.obj-21dae62d0e47ca8a39ef29b0f5e8139c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

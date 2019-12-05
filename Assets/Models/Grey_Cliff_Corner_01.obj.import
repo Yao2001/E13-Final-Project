@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Grey_Cliff_Corner_01.obj-899f3ee297c95ddec03e01a4cd36dc29.mesh"
+
+[deps]
+
+files=[ "res://.import/Grey_Cliff_Corner_01.obj-899f3ee297c95ddec03e01a4cd36dc29.mesh" ]
+
+source_file="res://Assets/Models/Grey_Cliff_Corner_01.obj"
+dest_files=[ "res://.import/Grey_Cliff_Corner_01.obj-899f3ee297c95ddec03e01a4cd36dc29.mesh", "res://.import/Grey_Cliff_Corner_01.obj-899f3ee297c95ddec03e01a4cd36dc29.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

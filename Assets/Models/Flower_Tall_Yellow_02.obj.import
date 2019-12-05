@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Flower_Tall_Yellow_02.obj-d01eca1fd45d729b4b7cf594e0d683ea.mesh"
+
+[deps]
+
+files=[ "res://.import/Flower_Tall_Yellow_02.obj-d01eca1fd45d729b4b7cf594e0d683ea.mesh" ]
+
+source_file="res://Assets/Models/Flower_Tall_Yellow_02.obj"
+dest_files=[ "res://.import/Flower_Tall_Yellow_02.obj-d01eca1fd45d729b4b7cf594e0d683ea.mesh", "res://.import/Flower_Tall_Yellow_02.obj-d01eca1fd45d729b4b7cf594e0d683ea.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

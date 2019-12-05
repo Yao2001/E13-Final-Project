@@ -1,0 +1,211 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Assets/524a4d09c0dad34052d0f6b91789d1eb.jpg" type="Texture" id=1]
+[ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Fireball.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/rock 3.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/rock 6.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/rock 2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/rock 1.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/rock 4.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/tall rock 2.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/rock 5.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/tall rock 3.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/talll rock 1.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/column.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/large 1.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/large 3.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/small 4.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Scenes/statue.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Scenes/tall 2.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Assets/Models/Rock_4_01.obj" type="PackedScene" id=19]
+[ext_resource path="res://Assets/Models/Rock_6_01.obj" type="PackedScene" id=20]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.572549, 0.00784314, 0.00784314, 1 )
+albedo_texture = ExtResource( 1 )
+
+[node name="Revelation" type="Spatial"]
+
+[node name="CSGBox" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.504, 0 )
+use_collision = true
+invert_faces = true
+width = 60.0
+height = 7.0
+depth = 40.0
+material = SubResource( 1 )
+
+[node name="Character" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 13.2986 )
+
+[node name="Flames" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="Fire" parent="Flames" groups=[
+"Fire",
+] instance=ExtResource( 3 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -6, 2, 7 )
+
+[node name="OmniLight" type="OmniLight" parent="Flames/Fire"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0.916327, 2.01202, 0 )
+light_energy = 1.5
+light_indirect_energy = 0.0
+shadow_enabled = true
+omni_range = 6.87093
+
+[node name="Fire2" parent="Flames" groups=[
+"Fire",
+] instance=ExtResource( 3 )]
+transform = Transform( 0.3, 0, 0, 0, 0.8, 0, 0, 0, 0.7, 16.0664, 3, -5 )
+
+[node name="OmniLight2" type="OmniLight" parent="Flames/Fire2"]
+transform = Transform( 3.33333, 0, 0, 0, 1.25, 0, 0, 0, 1.42857, 0.00418854, 0.00751257, -0.662423 )
+light_energy = 1.5
+light_indirect_energy = 0.0
+shadow_enabled = true
+omni_range = 5.02484
+
+[node name="Fire3" parent="Flames" groups=[
+"Fire",
+] instance=ExtResource( 3 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -11, 3, -14 )
+
+[node name="OmniLight3" type="OmniLight" parent="Flames/Fire3"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -0.962482, 0.0300503, -0.309418 )
+light_energy = 1.5
+light_indirect_energy = 0.0
+shadow_enabled = true
+omni_range = 4.95446
+
+[node name="Fire4" parent="Flames" groups=[
+"Fire",
+] instance=ExtResource( 3 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.8, 9, 3, -13 )
+
+[node name="OmniLight4" type="OmniLight" parent="Flames/Fire4"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 1.25, 0.302895, 0.0120201, 0.068119 )
+light_energy = 1.5
+light_indirect_energy = 0.0
+shadow_enabled = true
+omni_range = 5.46375
+
+[node name="Fire5" parent="Flames" groups=[
+"Fire",
+] instance=ExtResource( 3 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4, 3, 2 )
+
+[node name="OmniLight4" type="OmniLight" parent="Flames/Fire5"]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0.433765, 0.0601006, -0.249439 )
+light_energy = 1.5
+light_indirect_energy = 0.0
+shadow_enabled = true
+omni_range = 3.99338
+
+[node name="Fire6" parent="Flames" groups=[
+"Fire",
+] instance=ExtResource( 3 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -10, 3, 8 )
+
+[node name="OmniLight5" type="OmniLight" parent="Flames/Fire6"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -0.0966644, 0.185987, -0.316078 )
+light_energy = 1.5
+light_indirect_energy = 0.0
+shadow_enabled = true
+omni_range = 4.99653
+
+[node name="Scene Root6" parent="." instance=ExtResource( 4 )]
+transform = Transform( 6, 0, 0, 0, 3, 0, 0, 0, 4, -12.0555, -0.037609, 6.18392 )
+
+[node name="Scene Root10" parent="." instance=ExtResource( 5 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -9.59036, -0.178011, -0.873318 )
+
+[node name="Scene Root" parent="." instance=ExtResource( 5 )]
+transform = Transform( 4, 0, 0, 0, 7, 0, 0, 0, 6, -14.7696, 0, 8.96328 )
+
+[node name="Scene Root2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 13.5386, 0, -2.38379 )
+
+[node name="Scene Root3" parent="." instance=ExtResource( 6 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -20.2298, -1.13189, -1.31916 )
+
+[node name="Scene Root4" parent="." instance=ExtResource( 7 )]
+transform = Transform( 3, 0, 0, 0, 4, 0, 0, 0, 5, 11.6386, 0.0144672, -0.99538 )
+
+[node name="Scene Root5" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 8, 0, 0, 0, 9, 0, 0, 14.8787 )
+
+[node name="Scene Root7" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.18979, 0, 8.05005 )
+
+[node name="Scene Root8" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.48951, 0, 9.58403 )
+
+[node name="Scene Root9" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65705, -1.90735e-006, 7.90651 )
+
+[node name="Scene Root11" parent="." instance=ExtResource( 10 )]
+transform = Transform( 5, 0, 0, 0, 6, 0, 0, 0, 4, 11.6908, 0, -9.61726 )
+
+[node name="Scene Root12" parent="." instance=ExtResource( 5 )]
+transform = Transform( 7, 0, 0, 0, 4, 0, 0, 0, 9, 20.0782, 0, 20.7785 )
+
+[node name="Scene Root13" parent="." instance=ExtResource( 6 )]
+transform = Transform( 6, 0, 0, 0, 3, 0, 0, 0, 5, 2.396, 0.00326067, -0.00266272 )
+
+[node name="Scene Root14" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1325, 0, -3.78013 )
+
+[node name="Scene Root15" parent="." instance=ExtResource( 12 )]
+transform = Transform( 8, 0, 0, 0, 5, 0, 0, 0, 3, 0.665445, -0.0828247, -14.0576 )
+
+[node name="Scene Root16" parent="." instance=ExtResource( 8 )]
+transform = Transform( 9, 0, 0, 0, 4, 0, 0, 0, 6, -3.96351, 0, -7.17679 )
+
+[node name="Scene Root17" parent="." instance=ExtResource( 4 )]
+transform = Transform( 5, 0, 0, 0, 3, 0, 0, 0, 3, 15.5171, 0, 13.3851 )
+
+[node name="Scene Root18" parent="." instance=ExtResource( 9 )]
+transform = Transform( 4, 0, 0, 0, 3.5, 0, 0, 0, 6, 21.5057, 0, 12.4373 )
+
+[node name="Scene Root19" parent="." instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 4, 0, 0, 0, 7, 22.0038, 0, -0.521887 )
+
+[node name="Scene Root20" parent="." instance=ExtResource( 4 )]
+transform = Transform( 6, 0, 0, 0, 5, 0, 0, 0, 6, 15.6331, 0, 5.99395 )
+
+[node name="Scene Root21" parent="." instance=ExtResource( 5 )]
+transform = Transform( 6, 0, 0, 0, 3, 0, 0, 0, 5, -30.8751, 0, 16.4373 )
+
+[node name="Scene Root22" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 0.7, 0, 0, 0, 1, 29.0549, 0.0542269, -18.9539 )
+
+[node name="Scene Root23" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 0.7, 0, 0, 0, 1, -28.9541, 0.0542269, -18.9207 )
+
+[node name="Scene Root24" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 0.7, 0, 0, 0, 1, -28.9547, 0.0542269, 18.8445 )
+
+[node name="Scene Root25" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 0.7, 0, 0, 0, 1, 28.9665, 0.0542269, 18.9059 )
+
+[node name="Scene Root26" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1384, 0, 12.5833 )
+
+[node name="Scene Root27" parent="." instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.487, 0, 6.1268 )
+
+[node name="Scene Root28" parent="." instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8365, 0, 3.87339 )
+
+[node name="Scene Root29" parent="." instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.5068, -0.123165, -2.64241 )
+
+[node name="Scene Root30" parent="." instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.32667, 0, 15.0348 )
+
+[node name="Scene Root31" parent="." instance=ExtResource( 19 )]
+transform = Transform( 4, 0, 0, 0, 3, 0, 0, 0, 6, -24.874, 0, -9.90397 )
+
+[node name="Scene Root32" parent="." instance=ExtResource( 20 )]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 3, 19.1779, 0, -12.723 )

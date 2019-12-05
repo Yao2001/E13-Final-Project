@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Fallen_Trunk_01.obj-52013752a6be925d4291e706f7c9cf6d.mesh"
+
+[deps]
+
+files=[ "res://.import/Fallen_Trunk_01.obj-52013752a6be925d4291e706f7c9cf6d.mesh" ]
+
+source_file="res://Assets/Models/Fallen_Trunk_01.obj"
+dest_files=[ "res://.import/Fallen_Trunk_01.obj-52013752a6be925d4291e706f7c9cf6d.mesh", "res://.import/Fallen_Trunk_01.obj-52013752a6be925d4291e706f7c9cf6d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
